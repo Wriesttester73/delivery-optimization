@@ -114,13 +114,13 @@ mae = mean_absolute_error(y_test, y_pred)
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 r2 = r2_score(y_test, y_pred)
 
-print("\n📊 Model Performance:")
+print("\n Model Performance:")
 print(f"Mean Absolute Error (MAE): {mae:.2f} mins")
 print(f"Root Mean Squared Error (RMSE): {rmse:.2f} mins")
 print(f"R² Score: {r2:.5f}")
 
 
-print("\n🚀 Real-Time Delivery Time Prediction")
+print("\n Real-Time Delivery Time Prediction")
 def predict_delivery_time():
     restaurant_zone = input("Enter restaurant zone (Zone_A to Zone_E): ")
     customer_zone = input("Enter customer zone (Zone_A to Zone_E): ")
@@ -141,7 +141,7 @@ def predict_delivery_time():
     }])
 
     prediction = model.predict(input_data)[0]
-    print(f"\n⏱️ Predicted Delivery Duration: {prediction:.2f} minutes\n")
+    print(f"\n⏱ Predicted Delivery Duration: {prediction:.2f} minutes\n")
 
 while True:
     predict_delivery_time()
