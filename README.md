@@ -1,0 +1,1 @@
+I have developed a prediction model using random forest regressor model. This is done in order to predict the delivery durations considering the order's restaurant zone, customer zone, delivery distance,traffic, climatic condition etc.
